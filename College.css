@@ -89,8 +89,11 @@ transform:scale (1.1);
 .sidebar .btn_two i:hover{
     font-size: 30px;
     cursor: pointer;
-
 }
+.btn_one i:hover{
+    font-size:35px;
+    cursor:pointer;
+        }
 #checkbox:checked ~ .sidebar{
     left: 0;
 }
