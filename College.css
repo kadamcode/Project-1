@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        padding: border-box;
+}
+.main_box{
+    background-image: url("photo.jpg");
+    background-size: cover;
+    height: 100vh;
+
+}
+.btn_one i{
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 16px;
+    position: absolute;
+    left: 16px;
+    padding-top: 15px;
+    transition:all 0.2s linear;
+}
+.sidebar{
+    position: fixed;
+    height: 100vh;
+    left: -300px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 6px rgba(255,255,255,0.5) ;
+    transition:all 0.2s linear;
+}
+.sidebar .logo{
+    position: absolute;
+    width:100%;
+    line-height: 60px;
+    box-shadow: 2px 0 4px rgba(255, 255, 255, 0.5);
+    height:60px
+}
+.sidebar .logo a{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    left: 50px;
+    text-decoration: none;
+    
+}
+.sidebar .btn_two i{
+    color: grey;
+    position: absolute;
+    left: 275px;
+    font-size: 25px;
+    font-weight: bold;
+   transition:all 0.3s linear;
+}
+.sidebar .menu{
+    position: absolute;
+    width: 100%;
+    top: 80px;
+}
+.menu li{
+    margin-top: 30px;
+    padding: 10px 30px;
+}
+.menu li i,a{
+    color: white;
+    text-decoration: none;
+}
+.sidebar .social_media{
+   position: absolute;
+   left: 25%;
+   bottom: 20px;
+}
+.sidebar .social_media i{
+   padding: 0 2px;
+   opacity: 0.5;
+}
+.main_box #checkbox{
+    display: none;
+}
+.menu li:hover{
+    box-shadow: 0 0 6px rgba(255,255,255,0.5) ; 
+}
+.social_media i:hover{
+opacity: 1;
+transform:scale (1.1);
+}
+.sidebar .btn_two i:hover{
+    font-size: 30px;
+    cursor: pointer;
+
+}
+#checkbox:checked ~ .sidebar{
+    left: 0;
+}
+#checkbox:checked ~ .btn_one{
+    opacity: 0;
+}
+.btn_one:hover{
+    font-size: 35px;
+}
